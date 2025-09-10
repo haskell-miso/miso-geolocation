@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 500px;
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+p {
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.location-icon {
+  font-size: 60px;
+  margin-bottom: 25px;
+  color: #6e8efb;
+}
+
+button {
+  background: linear-gradient(to right, #6e8efb, #a777e3);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(110, 142, 251, 0.3);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(110, 142, 251, 0.4);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.location-data {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  text-align: left;
+  display: none;
+}
+
+.location-data h2 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.data-item {
+  margin-bottom: 12px;
+  display: flex;
+}
+
+.data-label {
+  font-weight: 600;
+  color: #555;
+  min-width: 120px;
+}
+
+.data-value {
+  color: #333;
+}
+
+.error {
+  color: #e74c3c;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #fdedec;
+  border-radius: 8px;
+  display: none;
+}
+
+.loading {
+  display: none;
+  margin-top: 20px;
+}
+
+.loading-spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #6e8efb;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.map-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #6e8efb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.map-link:hover {
+  text-decoration: underline;
+}
